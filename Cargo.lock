@@ -97,7 +97,7 @@ name = "cargo-mobile2"
 version = "0.6.0"
 dependencies = [
  "cocoa",
- "colored",
+ "colored 2.0.4",
  "core-foundation 0.9.3",
  "deunicode",
  "duct",
@@ -188,6 +188,17 @@ dependencies = [
  "is-terminal",
  "lazy_static",
  "winapi",
+]
+
+[[package]]
+name = "colored"
+version = "2.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2674ec482fbc38012cf31e6c42ba0177b431a0cb6f15fe40efa5aab1bda516f6"
+dependencies = [
+ "is-terminal",
+ "lazy_static",
+ "windows-sys",
 ]
 
 [[package]]
@@ -1374,7 +1385,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "45b60258a35dc3cb8a16890b8fd6723349bfa458d7960e25e633f1b1c19d7b5e"
 dependencies = [
  "atty",
- "colored",
+ "colored 1.9.4",
  "log",
  "time",
  "winapi",
