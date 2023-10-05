@@ -92,7 +92,7 @@ lexical-core = "0.8"
 libc = "0.2"
 
 [target."cfg(windows)".dependencies.windows]
-version = "0.39"
+version = "0.51"
 features = [
   "Win32_Foundation",
   "Win32_Security",
